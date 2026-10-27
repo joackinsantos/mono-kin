@@ -1,2 +1,2 @@
 # mono-kin
-Mono repository
+Mono-kin repository
