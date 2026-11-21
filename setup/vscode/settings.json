@@ -1,0 +1,90 @@
+{
+  // ==========================================
+  // 1. APPEARANCE, THEMES & WORKSPACE UI
+  // ==========================================
+  "workbench.colorTheme": "Kanagawa",
+  "workbench.preferredDarkColorTheme": "Kanagawa",
+  "workbench.preferredLightColorTheme": "Tokyo Night Light",
+  "workbench.iconTheme": "material-icon-theme",
+  "chat.disableAIFeatures": true,
+
+  // ==========================================
+  // 2. TYPOGRAPHY (14" LAPTOP — COMPACT)
+  // ==========================================
+  "editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', Consolas, monospace",
+  "editor.fontSize": 12,
+  "editor.lineHeight": 1.45,
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "'JetBrains Mono', 'Cascadia Code', monospace",
+  "terminal.integrated.fontSize": 11.5,
+
+  // ==========================================
+  // 3. EDITOR ERGONOMICS & FORMATTING
+  // ==========================================
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // ==========================================
+  // 4. LANGUAGE-SPECIFIC OVERRIDES
+  // ==========================================
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit",
+    },
+  },
+  "[markdown]": {
+    "editor.fontFamily": "'Google Sans', 'Segoe UI', sans-serif",
+    "editor.fontSize": 12,
+    "editor.lineHeight": 1.55,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "markdown.preview.fontFamily": "'Google Sans', 'Segoe UI', sans-serif",
+  "markdown.preview.fontSize": 13,
+  "markdown.preview.lineHeight": 1.6,
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[jsonc]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[css]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  // ==========================================
+  // 5. EXTENSIONS (TODO TREE & PETS)
+  // ==========================================
+  "todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
+  "vscode-pets.theme": "autumn",
+  "vscode-pets.throwBallWithMouse": true,
+  "cSpell.userWords": ["Tato"],
+}
