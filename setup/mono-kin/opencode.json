@@ -1,0 +1,84 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "build",
+  "model": {
+    "providerID": "ollama",
+    "model": "mimo-v2.6"
+  },
+  "providers": {
+    "ollama": {
+      "package": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "settings": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "mimo-v2.6": {
+          "name": "MiMo v2.6 (9B)",
+          "limit": {
+            "context": 65536,
+            "output": 8192
+          }
+        },
+        "gpt-oss:20b": {
+          "name": "GPT-OSS 20B",
+          "limit": {
+            "context": 65536,
+            "output": 8192
+          }
+        },
+        "qwen3.8:27b": {
+          "name": "Qwen 3.8 27B",
+          "limit": {
+            "context": 65536,
+            "output": 8192
+          }
+        }
+      }
+    }
+  },
+  "permissions": [
+    {
+      "action": "edit",
+      "resource": "*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "*",
+      "effect": "ask"
+    }
+  ],
+  "agents": {
+    "build": {
+      "mode": "primary",
+      "description": "Daily driver for fast implementation, edits, and routine coding tasks",
+      "model": {
+        "providerID": "ollama",
+        "model": "mimo-v2.6"
+      }
+    },
+    "plan": {
+      "mode": "primary",
+      "description": "Architectural planning, system design, specs, and code analysis",
+      "model": {
+        "providerID": "ollama",
+        "model": "gpt-oss:20b"
+      }
+    },
+    "Deep": {
+      "mode": "primary",
+      "description": "Heavy reasoning for complex refactors, debugging, and visual architecture",
+      "model": {
+        "providerID": "ollama",
+        "model": "qwen3.8:27b"
+      }
+    },
+    "title": {
+      "model": {
+        "providerID": "ollama",
+        "model": "mimo-v2.6"
+      }
+    }
+  }
+}

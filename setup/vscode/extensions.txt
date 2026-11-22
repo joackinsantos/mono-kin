@@ -1,7 +1,7 @@
-Extensions installed on WSL: Ubuntu:
 charliermarsh.ruff
 enkia.tokyo-night
 esbenp.prettier-vscode
+fedaykindev.openchamber
 foam.foam-vscode
 gruntfuggly.todo-tree
 humao.rest-client

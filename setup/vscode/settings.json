@@ -6,6 +6,8 @@
   "workbench.preferredDarkColorTheme": "Kanagawa",
   "workbench.preferredLightColorTheme": "Tokyo Night Light",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.compact": true,
+  "window.density.layout": "compact",
   "chat.disableAIFeatures": true,
 
   // ==========================================
@@ -21,6 +23,7 @@
   // ==========================================
   // 3. EDITOR ERGONOMICS & FORMATTING
   // ==========================================
+  "editor.rulers": [80, 88],
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
@@ -33,6 +36,8 @@
   // ==========================================
   // 4. LANGUAGE-SPECIFIC OVERRIDES
   // ==========================================
+  // Python (Ruff)
+  "ruff.lineLength": 88,
   "[python]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "charliermarsh.ruff",
@@ -41,6 +46,9 @@
       "source.organizeImports.ruff": "explicit",
     },
   },
+
+  // Markdown & Web (Prettier)
+  "prettier.printWidth": 88,
   "[markdown]": {
     "editor.fontFamily": "'Google Sans', 'Segoe UI', sans-serif",
     "editor.fontSize": 12,
@@ -51,14 +59,6 @@
   "markdown.preview.fontFamily": "'Google Sans', 'Segoe UI', sans-serif",
   "markdown.preview.fontSize": 13,
   "markdown.preview.lineHeight": 1.6,
-  "[json]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
-  "[jsonc]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
   "[yaml]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -80,8 +80,22 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
+  // JSON & Schemas
+  "json.schemaDownload.trustedDomains": {
+    "https://opencode.ai/": true,
+    "https://models.dev/": true,
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[jsonc]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
   // ==========================================
-  // 5. EXTENSIONS (TODO TREE & PETS)
+  // 5. EXTENSIONS (TODO TREE, PETS & SPELL CHECKER)
   // ==========================================
   "todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
   "vscode-pets.theme": "autumn",
